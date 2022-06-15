@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(79, 79, 250, 0.724);
+  color: white;
+}
+
+.Logo{
+    letter-spacing: 11px;
+    background-color: black;
+    padding: 8px;
+
+}
+
+.arrow{
+  font-size: 40px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+nav ul li {
+  /* margin-top: 10px; */
+  padding: 28px;
+  text-align: center;
+}
+
+nav ul li a {
+  font: larger bolder;
+}
+
+nav a:hover{
+    color: blue;
+}
+.container{
+    margin: 10px 30px 10px 30px;
+}
+
+main {
+  height: 100vh;
+  width: -webkit-fill-available;
+  margin-left: 82px;
+  position: relative;
+}
+
+section{
+  height: 100vh;
+}
+
+.tsparticles{
+  height: 100vh;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.197);
+}
+
+.home {
+    position: absolute;
+    transform: translate(108%, 35%);
+    height: max-content;
+}
+
+.overlay{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-position: 10px -146px;
+    opacity: 0.2;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section .user-img {
+    z-index: 2;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 175px;
+  width: 175px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 50px;
+  opacity: 0.96;
+}
+
+section .user-img img {
+  height: 120%;
+  width: 100%;
+}
+
+ .description{
+   margin-top: 20px;
+     width: min-content;;
+    text-align:center;
+    z-index: 2;
+}
+section h3{
+letter-spacing: 6px;
+  color:white;
+}
+section h1{
+    line-height: 60px;
+}
+
+section h1 span:first-child{
+    color: blue;
+}
+section h1 span:last-child{
+    color: rgb(0, 128, 255);
+}
+
+.typewriter{
+    width: min-content;
+    margin:0 60px 0 60px ;
+}
+
+.typewriter h1{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .2em solid rgb(225, 218, 218); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgba(244, 244, 244, 0.47); }
+  }
+
+
+.ajaya:first-child{
+    transform: rotate3d(0,0,1, 90deg);
+}
+
+section p{
+    color: rgb(71, 65, 65);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+section p span:first-child{
+    color: rgba(8, 8, 240, 0.759);
+}
+
+.resume-btn{
+    height: 40px;
+    padding:10px 20px;
+    background-color: rgba(79, 79, 250, 0.724);
+    border: none;
+    border-radius: 8px;
+
+}
+.resume-btn:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 255);
+    color: white;
+    transition: 0.6s linear;
+
+}
+
+.socials ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.socials ul li a {
+    margin: 20px;
+    font-size: 25px;
+    color: rgba(0, 0, 255, 0.512);
+}
+
+.socials ul li a:hover{
+    color: blue;
+    transition: 0.6s ease-in-out;
+}
+
+
+
+section a{
+    color: black;
+}
+
+.about-me{
+    height: 100vh;
+}
+
+.title{
+  color: black;
+    text-align: center;
+}
+
+.sub-title{
+  color: black;
+  padding: 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  table th{
+    text-align: center;
+    background-color: rgba(124, 158, 236, 0.471);
+  }
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
