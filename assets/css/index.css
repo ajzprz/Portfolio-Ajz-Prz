@@ -1,9 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+.my-20 {
+  margin: 20px 0 20px 0;
+}
+
+.pd2 {
+  padding: 20px;
+}
+
+.tx-3 {
+  font-size: 3rem;
+}
+
+.justify {
+  text-align: justify;
 }
 
 a {
@@ -15,16 +33,14 @@ li {
 }
 
 body {
-  display: flex;
-  flex-direction: row;
   font-family: "Ubuntu", sans-serif;
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -34,14 +50,13 @@ nav {
   color: white;
 }
 
-.Logo{
-    letter-spacing: 11px;
-    background-color: black;
-    padding: 8px;
-
+.Logo {
+  letter-spacing: 11px;
+  background-color: black;
+  padding: 8px;
 }
 
-.arrow{
+.arrow {
   font-size: 40px;
 }
 
@@ -61,60 +76,47 @@ nav ul li a {
   font: larger bolder;
 }
 
-nav a:hover{
-    color: blue;
+nav a:hover {
+  color: blue;
 }
-.container{
-    margin: 10px 30px 10px 30px;
+.container {
+  margin: 10px 30px 10px 30px;
 }
 
 main {
-  height: 100vh;
-  width: -webkit-fill-available;
   margin-left: 82px;
   position: relative;
 }
 
-section{
+.home{
   height: 100vh;
+  display: flex;
+  position: relative;
 }
 
-.tsparticles{
-  height: 100vh;
-  z-index: -1;
-  background-color: rgba(0, 0, 0, 0.197);
-}
-
-.home {
-    position: absolute;
-    transform: translate(108%, 35%);
-    height: max-content;
-}
-
-.overlay{
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    height: 100vh;
-    background-position: 10px -146px;
-    opacity: 0.2;
-}
-
-.hero{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.hero {
+  position: absolute;
+  transform: translate(82%,30%);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 section .user-img {
-    z-index: 2;
+  z-index: 2;
   border-radius: 50%;
   overflow: hidden;
   height: 175px;
   width: 175px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 50px;
+  box-shadow: rgba(0, 0, 0, 0.90) 0px 5px 50px;
   opacity: 0.96;
+
+}
+
+.user-img:hover{
+  animation: coinToss 2s cubic-bezier(0.19, 1, 0.22, 1) infinite ;
 }
 
 section .user-img img {
@@ -122,135 +124,242 @@ section .user-img img {
   width: 100%;
 }
 
- .description{
-   margin-top: 20px;
-     width: min-content;;
-    text-align:center;
-    z-index: 2;
-}
-section h3{
-letter-spacing: 6px;
-  color:white;
-}
-section h1{
-    line-height: 60px;
-}
-
-section h1 span:first-child{
-    color: blue;
-}
-section h1 span:last-child{
-    color: rgb(0, 128, 255);
-}
-
-.typewriter{
-    width: min-content;
-    margin:0 60px 0 60px ;
-}
-
-.typewriter h1{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .2em solid rgb(225, 218, 218); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
+@keyframes coinToss {
+  0%{
+    transform: scale(1) rotateY(0);
   }
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgba(244, 244, 244, 0.47); }
+  30%{
+    transform: scale(1) rotate(10deg);
   }
 
+  60%{
+    transform: scale(1) rotate(-10deg);
+  }
+  100%{
+    transform: scale(1) rotateY(0);
+  }
 
-.ajaya:first-child{
-    transform: rotate3d(0,0,1, 90deg);
+  /* 100%{
+    transform: scale(1) rotate(0);
+  } */
 }
 
-section p{
-    color: rgb(71, 65, 65);
-    margin-bottom: 20px;
-    font-weight: 600;
+.description {
+  margin-top: 20px;
+  width: min-content;
+  text-align: center;
+  z-index: 2;
+}
+section h3 {
+  font-size: 1.5rem;
+  letter-spacing: 6px;
+  color: white;
+}
+section h1 {
+  font-size: 2rem;
+  line-height: 60px;
 }
 
-section p span:first-child{
-    color: rgba(8, 8, 240, 0.759);
+section h1 span:first-child {
+  color: blue;
+}
+section h1 span:last-child {
+  color: rgb(0, 128, 255);
 }
 
-.resume-btn{
-    height: 40px;
-    padding:10px 20px;
-    background-color: rgba(79, 79, 250, 0.724);
-    border: none;
-    border-radius: 8px;
-
-}
-.resume-btn:hover{
-    cursor: pointer;
-    background-color: rgb(0, 0, 255);
-    color: white;
-    transition: 0.6s linear;
-
+.typewriter {
+  width: min-content;
+  margin: 0 60px 0 60px;
 }
 
-.socials ul{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.2em solid rgb(225, 218, 218); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(244, 244, 244, 0.47);
+  }
+}
+
+.ajaya:first-child {
+  transform: rotate3d(0, 0, 1, 90deg);
+}
+
+section p {
+  color: rgb(71, 65, 65);
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+section p span:first-child {
+  color: rgba(8, 8, 240, 0.759);
+}
+
+.resume-btn {
+  height: 40px;
+  padding: 10px 20px;
+  background-color: rgba(79, 79, 250, 0.724);
+  border: none;
+  border-radius: 8px;
+}
+.resume-btn:hover {
+  cursor: pointer;
+  background-color: rgb(0, 0, 255);
+  color: white;
+  transition: 0.6s linear;
+}
+
+.socials ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .socials ul li a {
-    margin: 20px;
-    font-size: 25px;
-    color: rgba(0, 0, 255, 0.512);
+  margin: 20px;
+  font-size: 25px;
+  color: rgba(0, 0, 255, 0.512);
 }
 
-.socials ul li a:hover{
-    color: blue;
-    transition: 0.6s ease-in-out;
+.socials ul li a:hover {
+  color: blue;
+  transition: 0.6s ease-in-out;
 }
 
-
-
-section a{
-    color: black;
-}
-
-.about-me{
-    height: 100vh;
-}
-
-.title{
+section a {
   color: black;
-    text-align: center;
 }
 
-.sub-title{
+.about-me {
+  width: auto;
+  height: auto;
+}
+
+.title {
+  color: rgb(57, 117, 247);
+  text-shadow: 0 0 3px rgba(137, 137, 237, 0.805);
+}
+
+.title span {
+  position: relative;
+}
+
+.title span::after {
+  position: absolute;
+  content: "";
+  border-bottom: 3px solid rgb(208, 177, 238);
+  width: 50%;
+  left: 0;
+  bottom: -10px;
+}
+
+.title h4 {
+  line-height: 10px;
+}
+
+.sub-title {
   color: black;
   padding: 10px;
-    margin: 10px 0px 10px 0px;
+  margin: 10px 0px 10px 0px;
 }
 
+.contents {
+  background-color: #f4f3f8;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contents img {
+  width: auto;
+  height: auto;
+}
+.details {
+  border: 1px dashed rgba(0, 0, 0, 0.244);
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 20px;
+}
+
+.details li {
+  padding: 10px;
+}
+
+.sub-contents {
+display: flex;
+flex-wrap: wrap;
+padding: 25px;
+}
+
+.sub-contents li {
+  text-align: justify;
+}
+
+.sub-contents li span {
+  font-weight: 900;
+}
+
+.a-underline{
+  text-decoration: underline rgba(125, 23, 220, 0.365) 3px;
+}
+
+
 table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  table th{
-    text-align: center;
-    background-color: rgba(124, 158, 236, 0.471);
-  }
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+table th {
+  text-align: center;
+  background-color: rgba(124, 158, 236, 0.471);
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+
+/* @media only screen and (max-width: 740px) {
+  body {
+    width: 740px;
   }
 
+  main {
+    width: 100%;
+  }
+  section {
+    width: 100%;
+  }
+  .tsparticles {
+    width: fit-content;
+    height: 100vh;
+  }
+  .home{
+    position: absolute;
+    transform: translate(-60%,0%);
+  }
+} */
