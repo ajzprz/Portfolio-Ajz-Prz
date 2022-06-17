@@ -386,7 +386,7 @@ th {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   
   nav {
     position: fixed;
@@ -411,7 +411,7 @@ th {
   }
 
   .contents img {
-    width: 500px;
+    width: auto;
   }
 
   .details {
@@ -424,7 +424,7 @@ th {
   }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
   nav {
     position: fixed;
     top: 0;
@@ -433,16 +433,16 @@ th {
   }
   .home {
     height: 70vh;
-    width: 380px;
+    width: auto;
     position: relative;
   }
 
   .hero {
     position: absolute;
-    transform: scale(0.8) ;
+    transform: scale(0.6) ;
   }
   .about-me{
-    width: min-content;
+    width: auto;
   }
 
   .contents {
@@ -451,7 +451,7 @@ th {
   }
 
   .contents img {
-    width: 300px;
+    width: auto;
   }
 
   .details {
