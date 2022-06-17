@@ -17,8 +17,14 @@
 }
 
 .tx-3 {
-  font-size: 3rem;
+  font-size: 3em;
 }
+
+.tx-1{
+  font-size: 1em;
+}
+
+
 
 .justify {
   text-align: justify;
@@ -94,9 +100,13 @@ main {
   position: relative;
 }
 
+body{
+  position: relative;
+}
+
 .hero {
   position: absolute;
-  transform: translate(82%,30%);
+  transform: translate(86%,50%);
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -343,23 +353,111 @@ th {
 }
 
 
-/* @media only screen and (max-width: 740px) {
-  body {
-    width: 740px;
+@media only screen and (max-width: 800px)  {
+  .home{
+    width: auto;
   }
 
-  main {
-    width: 100%;
+  .hero{
+    transform: scale(0.9) translate(10%,50%);
   }
-  section {
-    width: 100%;
+
+  .about-me{
+    display: flex;
+    flex-direction: column;
   }
-  .tsparticles {
-    width: fit-content;
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contents img{
+    width: auto;
+  }
+
+  table{
+    font-size: 0.9em;
+  }
+
+}
+
+@media only screen and (width: 600px)  {
+  nav{
+    position: fixed;
+    top:0;
+    left: 0;
     height: 100vh;
   }
   .home{
-    position: absolute;
-    transform: translate(-60%,0%);
+    width: 100%;
+    position: relative;
   }
-} */
+
+  .hero{
+    position: absolute;
+    transform: scale(0.7) translate(0,50%);
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contents img{
+    width: 500px;
+  }
+
+  .details{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  table{
+    font-size: 0.9em;
+  }
+
+}
+
+
+@media only screen and (max-width: 300px)  {
+  nav{
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100vh;
+  }
+  .home{
+    width: 380px;
+    position: relative;
+  }
+
+  .hero{
+    position: absolute;
+    transform: scale(0.7) translate(-10%,50%);
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contents img{
+    width: 100px;
+  }
+
+  .details{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .details ul li{
+    text-align: start;
+  }
+
+  table{
+    font-size: 0.9em;
+  }
+
+}
