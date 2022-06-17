@@ -106,7 +106,7 @@ main {
   left: 0;
   top: 0;
   right: 0;
-  transform: translate(0, 50%);  
+  transform: translate(0, 50%);
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -364,7 +364,7 @@ th {
   }
 
   .hero {
-    transform: scale(0.9) translate(0,50%);
+    transform: scale(0.9) translate(0, 50%);
   }
 
   .about-me {
@@ -387,7 +387,6 @@ th {
 }
 
 @media only screen and (max-width: 500px) {
-  
   nav {
     position: fixed;
     top: 0;
@@ -432,16 +431,16 @@ th {
     height: 100vh;
   }
   .home {
-    height: 70vh;
+    height: 60vh;
     width: auto;
     position: relative;
   }
 
   .hero {
     position: absolute;
-    transform: scale(0.6) ;
+    transform: scale(0.6);
   }
-  .about-me{
+  .about-me {
     width: auto;
   }
 
