@@ -420,6 +420,7 @@ section a {
 .resume-screenshot img{
   width:50%;
   margin: auto;
+  padding:10px;
 }
 
 .sub-contents {
