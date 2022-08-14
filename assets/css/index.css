@@ -398,6 +398,7 @@ section a {
   background:rgba(56, 69, 95, 0.259);
 }
 .percent{
+  color:wheat;
   width: 5%;
   height:100%;
   background:#064becb3;
