@@ -12,6 +12,10 @@
   margin-top: 10px;
 }
 
+.mb-10{
+  margin-bottom: 10px;
+}
+
 .my-20 {
   margin: 20px 0 20px 0;
 }
@@ -406,6 +410,16 @@ section a {
   text-align: center;
   flex-direction:column;
   justify-content: space-around;
+}
+
+.resume-screenshot{
+  text-align: center;
+  margin:auto;
+}
+
+.resume-screenshot img{
+  width:50%;
+  margin: auto;
 }
 
 .sub-contents {
