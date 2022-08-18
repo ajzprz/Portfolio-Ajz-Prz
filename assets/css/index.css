@@ -111,7 +111,6 @@ nav .menu i:hover {
   transform: scale(1.5);
 }
 
-
 .container {
   margin: 10px 30px 10px 30px;
 }
@@ -237,7 +236,6 @@ section h1 span:last-child {
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-
   from,
   to {
     border-color: transparent;
@@ -516,11 +514,11 @@ section a {
   }
 }
 
-.project-box:hover>a .btn-58 {
+.project-box:hover > a .btn-58 {
   display: block;
 }
 
-.project-box:hover>.overlay {
+.project-box:hover > .overlay {
   opacity: 1;
 }
 
@@ -582,13 +580,13 @@ th {
   padding: 8px;
 }
 
-.contactus{
+.contactus {
   display: flex;
   flex-direction: row;
   padding: 10px;
 }
 
-.contact-form{
+.contact-form {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -596,7 +594,7 @@ th {
   padding: 50px;
 }
 
-.input-control{
+.input-control {
   padding: 10px;
   border: none;
   border-bottom: 1px solid wheat;
@@ -604,15 +602,15 @@ th {
   background: none;
   color: white;
 }
-.input-control::placeholder{
+.input-control::placeholder {
   color: white;
 }
 
-.input-control:focus{
-  outline:none;
+.input-control:focus {
+  outline: none;
 }
 
-.contact-submit{
+.contact-submit {
   margin-top: 40px;
   width: max-content;
   padding: 8px;
@@ -620,32 +618,31 @@ th {
   border: none;
 }
 
-.contact-submit:hover{
+.contact-submit:hover {
   cursor: pointer;
   background-color: #06f;
-
 }
 
-.contact-details{
+.contact-details {
   width: 50%;
   padding: 50px;
   display: flex;
   flex-direction: column;
   background-color: #dddddd48;
 }
-.cont-detail{
+.cont-detail {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  padding:20px 20px 20px 0px;
+  padding: 20px 20px 20px 0px;
 }
 
-.contact-icon i{
+.contact-icon i {
   font-size: 20px;
   color: white;
 }
 
-.contact-icon i::before{
+.contact-icon i::before {
   background-color: #06f;
   padding: 20px;
   margin-right: 20px;
@@ -687,36 +684,33 @@ th {
   table {
     font-size: 0.9em;
   }
-  .bar{
+  .bar {
     width: 100%;
   }
 
-  .skill{
+  .skill {
     width: 30%;
   }
-.progress{
-  width: 60%;
-}
-  .percent{
+  .progress {
+    width: 60%;
+  }
+  .percent {
     width: 10%;
   }
 
-  .contactus{
+  .contactus {
     display: flex;
     flex-direction: column;
   }
 
-  .contact-form{
+  .contact-form {
     width: 100%;
   }
 
-  .contact-details{
+  .contact-details {
     width: 100%;
   }
-
 }
-
-
 
 @media only screen and (max-width: 500px) {
   nav {
@@ -755,17 +749,17 @@ th {
     font-size: 0.9em;
   }
 
-  .bar{
+  .bar {
     width: 100%;
   }
 
-  .skill{
+  .skill {
     width: 60%;
   }
-.progress{
-  width: 20%;
-}
-  .percent{
+  .progress {
+    width: 20%;
+  }
+  .percent {
     width: 20%;
   }
 }
@@ -811,29 +805,26 @@ th {
     text-align: start;
   }
 
-  
   table {
     font-size: 0.9em;
   }
 
-  .bar{
+  .bar {
     width: 100%;
   }
 
-  .skill{
+  .skill {
     width: 60%;
   }
-.progress{
-  width: 20%;
-}
-  .percent{
+  .progress {
+    width: 20%;
+  }
+  .percent {
     width: 20%;
   }
 
-  .contactus{
+  .contactus {
     display: flex;
     flex-direction: column;
   }
-
-
 }
