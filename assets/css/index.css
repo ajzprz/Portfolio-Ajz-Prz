@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
 *,
 *::before,
 *::after {
@@ -8,11 +9,11 @@
   scroll-behavior: smooth;
 }
 
-.mt-10{
+.mt-10 {
   margin-top: 10px;
 }
 
-.mb-10{
+.mb-10 {
   margin-bottom: 10px;
 }
 
@@ -40,6 +41,7 @@ a {
   text-decoration: none;
   color: white;
 }
+
 li {
   list-style: none;
 }
@@ -59,8 +61,7 @@ nav {
   top: 0;
   left: 0;
   z-index: 10;
- color: white;
-
+  color: white;
 }
 
 .Logo {
@@ -69,15 +70,15 @@ nav {
   padding: 8px;
 }
 
-.menu-wrapper{
+.menu-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   color: white;
-  height:fit-content;
+  height: fit-content;
   margin-top: 45px;
-  height:81vh;
+  height: 81vh;
 }
 
 .arrow i {
@@ -98,7 +99,7 @@ nav ul li {
 
 nav ul li a i {
   font: larger bolder;
-  transition:0.5s;
+  transition: 0.3s;
 }
 
 nav .arrow i:hover {
@@ -107,8 +108,9 @@ nav .arrow i:hover {
 
 nav .menu i:hover {
   color: blue;
-  transform:scale(2)
+  transform: scale(1.5);
 }
+
 .container {
   margin: 10px 30px 10px 30px;
 }
@@ -159,6 +161,7 @@ section .user-img img {
   0% {
     transform: scale(1) rotateY(0);
   }
+
   30% {
     transform: scale(1) rotate(10deg);
   }
@@ -166,6 +169,7 @@ section .user-img img {
   60% {
     transform: scale(1) rotate(-10deg);
   }
+
   100% {
     transform: scale(1) rotateY(0);
   }
@@ -181,11 +185,13 @@ section .user-img img {
   text-align: center;
   z-index: 2;
 }
+
 section h3 {
   font-size: 1.5rem;
   letter-spacing: 6px;
   color: white;
 }
+
 section h1 {
   font-size: 2rem;
   line-height: 60px;
@@ -194,6 +200,7 @@ section h1 {
 section h1 span:first-child {
   color: blue;
 }
+
 section h1 span:last-child {
   color: rgb(0, 128, 255);
 }
@@ -204,17 +211,24 @@ section h1 span:last-child {
 }
 
 .typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.2em solid rgb(225, 218, 218); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.2em solid rgb(225, 218, 218);
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  /* Adjust as needed */
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
+
 @keyframes typing {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
@@ -222,10 +236,12 @@ section h1 span:last-child {
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
+
   from,
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: rgba(244, 244, 244, 0.47);
   }
@@ -247,7 +263,7 @@ section p span:first-child {
 }
 
 .resume-btn {
-  color: white !important ;
+  color: white !important;
   font-size: 15px !important;
   height: 40px;
   padding: 10px 20px;
@@ -256,9 +272,8 @@ section p span:first-child {
   border-radius: 8px;
 }
 
-.resume-btn:hover{
-  background:blue;
-  
+.resume-btn:hover {
+  background: blue;
 }
 
 .socials ul {
@@ -269,7 +284,7 @@ section p span:first-child {
 
 .socials ul li a {
   margin: 20px;
-  font-size:30px;
+  font-size: 30px;
   color: rgba(0, 0, 255, 0.512);
 }
 
@@ -326,6 +341,7 @@ section a {
   width: auto;
   height: auto;
 }
+
 .details {
   border: 1px dashed rgba(0, 0, 0, 0.244);
   width: fit-content;
@@ -340,87 +356,193 @@ section a {
   padding: 10px;
 }
 
-.bar{
-  width:100%;
-  height:40px;
-  background:aliceblue;
-  overflow:hidden;
+.bar {
+  width: 100%;
+  height: 40px;
+  background: aliceblue;
+  overflow: hidden;
   align-items: center;
   display: flex;
   margin-bottom: 10px;
-  background:rgba(79, 79, 250, 0.561);
+  background: rgba(79, 79, 250, 0.561);
 }
 
-.skill{
+.skill {
   width: 20%;
-  height:100%;
+  height: 100%;
   display: flex;
   text-align: center;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: space-around;
   color: white;
   font-weight: 900;
 }
 
-.progress{
+.progress {
   width: 80%;
-  height:100%;
+  height: 100%;
 }
 
-.ninety-progress{
+.ninety-progress {
   width: 90%;
-  height:100%;
-  background:rgba(56, 69, 95, 0.259);
+  height: 100%;
+  background: rgba(56, 69, 95, 0.259);
 }
 
-.eighty-progress{
+.eighty-progress {
   width: 80%;
-  height:100%;
-  background:rgba(56, 69, 95, 0.259);
+  height: 100%;
+  background: rgba(56, 69, 95, 0.259);
 }
 
-.seventy-progress{
+.seventy-progress {
   width: 70%;
-  height:100%;
-  background:rgba(56, 69, 95, 0.259);
+  height: 100%;
+  background: rgba(56, 69, 95, 0.259);
 }
 
-.sixty-progress{
+.sixty-progress {
   width: 60%;
-  height:100%;
-  background:rgba(56, 69, 95, 0.259);
+  height: 100%;
+  background: rgba(56, 69, 95, 0.259);
 }
 
-.fifty-progress{
+.fifty-progress {
   width: 50%;
-  height:100%;
-  background:rgba(56, 69, 95, 0.259);
+  height: 100%;
+  background: rgba(56, 69, 95, 0.259);
 }
-.fourty-progress{
+
+.fourty-progress {
   width: 40%;
-  height:100%;
-  background:rgba(56, 69, 95, 0.259);
+  height: 100%;
+  background: rgba(56, 69, 95, 0.259);
 }
-.percent{
-  color:wheat;
+
+.percent {
+  color: wheat;
   width: 5%;
-  height:100%;
-  background:#064becb3;
+  height: 100%;
+  background: #064becb3;
   display: flex;
   text-align: center;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: space-around;
 }
 
-.resume-screenshot{
-  text-align: center;
-  margin:auto;
+.projects-wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.resume-screenshot img{
-  width:50%;
+.project-box {
+  width: 300px;
+  height: 400px;
+  /* border: 1px solid rgba(0, 0, 0, 0.346); */
+  background-color: rgba(0, 255, 255, 0.145);
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.529);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.btn-58 {
+  position: absolute;
+  z-index: 100;
+  left: 27%;
+  top: 46%;
+  display: none;
+  cursor: pointer;
+  align-items: center;
+  background-color: #06f;
+  border: 2px solid #06f;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -0.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-58:focus {
+  color: white;
+}
+
+.button-58:hover {
+  background-color: #3385ff;
+  border-color: #3385ff;
+  fill: #06f;
+  color: white;
+}
+
+.button-58:active {
+  background-color: #3385ff;
+  border-color: #3385ff;
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .button-58 {
+    min-width: 170px;
+  }
+}
+
+.project-box:hover>a .btn-58 {
+  display: block;
+}
+
+.project-box:hover>.overlay {
+  opacity: 1;
+}
+
+.project-img {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.project-title {
+  padding: 20px;
+}
+
+.resume-screenshot {
+  text-align: center;
   margin: auto;
-  padding:10px;
+}
+
+.resume-screenshot img {
+  width: 50%;
+  margin: auto;
+  padding: 10px;
 }
 
 .sub-contents {
@@ -446,15 +568,87 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
+
 table th {
   text-align: center;
   background-color: rgba(124, 158, 236, 0.471);
 }
+
 td,
 th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+}
+
+.contactus{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: rgba(79, 79, 250, 0.724);
+  padding: 50px;
+}
+
+.input-control{
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid wheat;
+  margin: 10px 0 10px 0px;
+  background: none;
+  color: white;
+}
+.input-control::placeholder{
+  color: white;
+}
+
+.input-control:focus{
+  outline:none;
+}
+
+.contact-submit{
+  margin-top: 40px;
+  width: max-content;
+  padding: 8px;
+  background: #0f294f76;
+  border: none;
+}
+
+.contact-submit:hover{
+  cursor: pointer;
+  background-color: #06f;
+
+}
+
+.contact-details{
+  width: 50%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: #dddddd48;
+}
+.cont-detail{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding:20px 20px 20px 0px;
+}
+
+.contact-icon i{
+  font-size: 20px;
+  color: white;
+}
+
+.contact-icon i::before{
+  background-color: #06f;
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 800px) {
@@ -464,6 +658,7 @@ th {
     left: 0;
     height: 100vh;
   }
+
   .home {
     height: 100vh;
     width: auto;
@@ -491,7 +686,36 @@ th {
   table {
     font-size: 0.9em;
   }
+  .bar{
+    width: 100%;
+  }
+
+  .skill{
+    width: 30%;
+  }
+.progress{
+  width: 60%;
 }
+  .percent{
+    width: 10%;
+  }
+
+  .contactus{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form{
+    width: 100%;
+  }
+
+  .contact-details{
+    width: 100%;
+  }
+
+}
+
+
 
 @media only screen and (max-width: 500px) {
   nav {
@@ -500,6 +724,7 @@ th {
     left: 0;
     height: 100vh;
   }
+
   .home {
     width: auto;
     height: 70vh;
@@ -528,6 +753,20 @@ th {
   table {
     font-size: 0.9em;
   }
+
+  .bar{
+    width: 100%;
+  }
+
+  .skill{
+    width: 60%;
+  }
+.progress{
+  width: 20%;
+}
+  .percent{
+    width: 20%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -537,6 +776,7 @@ th {
     left: 0;
     height: 100vh;
   }
+
   .home {
     height: 50vh;
     width: auto;
@@ -547,6 +787,7 @@ th {
     position: absolute;
     transform: scale(0.6);
   }
+
   .about-me {
     width: auto;
   }
@@ -569,7 +810,29 @@ th {
     text-align: start;
   }
 
+  
   table {
     font-size: 0.9em;
   }
+
+  .bar{
+    width: 100%;
+  }
+
+  .skill{
+    width: 60%;
+  }
+.progress{
+  width: 20%;
+}
+  .percent{
+    width: 20%;
+  }
+
+  .contactus{
+    display: flex;
+    flex-direction: column;
+  }
+
+
 }
