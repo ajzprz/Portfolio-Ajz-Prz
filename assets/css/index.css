@@ -728,6 +728,7 @@ th {
 
   .hero {
     position: absolute;
+    top:65px;
     transform: scale(0.7);
   }
 
@@ -746,7 +747,7 @@ th {
   }
 
   table {
-    font-size: 0.9em;
+    font-size: 0.4em;
   }
 
   .bar {
@@ -769,7 +770,7 @@ th {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 112vh;
   }
 
   .home {
@@ -807,6 +808,7 @@ th {
 
   table {
     font-size: 0.9em;
+    width: 100%;
   }
 
   .bar {
