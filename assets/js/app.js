@@ -80,3 +80,25 @@ const options = {
 };
 
 tsParticles.load("home", options);
+
+// Scroll Reveal Animation
+const observerOptions = {
+  threshold: 0.15, // Trigger when 15% of the element is visible
+  rootMargin: "0px"
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
+      // Optional: unobserve if we only want it to animate once
+      // observer.unobserve(entry.target);
+    } else {
+        // Optional: remove class to animate out when scrolling away
+        // entry.target.classList.remove("active");
+    }
+  });
+}, observerOptions);
+
+const revealElements = document.querySelectorAll(".reveal");
+revealElements.forEach((el) => observer.observe(el));
