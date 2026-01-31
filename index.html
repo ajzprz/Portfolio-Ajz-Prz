@@ -76,7 +76,7 @@
                 <li>
                   <a
                     class="resume-btn"
-                    href="./assets/documents/Ajaya Prajapati's Resume 2022.pdf"
+                    href="./assets/documents/Ajaya_Prajapati_Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     >Resumé
@@ -123,7 +123,7 @@
 
             <div class="details">
               <ul class="right">
-                <li><span>Based in:</span> Bhaktapur, Nepal</li>
+                <li><span>Based in:</span> Ontario, Canada</li>
                 <li><span>Website:</span> ajayaprajapati.com.np</li>
                 <li><span>Email:</span> ajz.prz@gmail.com</li>
               </ul>
@@ -270,7 +270,7 @@
         <div class="resume-screenshot">
         
           <div class="resume-actions">
-            <a href="./assets/documents/Ajaya Prajapati's Resume 2022.pdf" target="_blank"
+            <a href="./assets/documents/Ajaya_Prajapati_Resume.pdf" target="_blank"
               ><button class="resume-btn">Download Resume</button></a
             >
           </div>
@@ -325,12 +325,13 @@
       <section class="contact-me container reveal" id="contact-me">
         <h1 class="title"><span>Contact Me</span></h1>
         <div class="contactus">
-          <form class="contact-form">
+          <form class="contact-form" id="contact-form">
             <h3>Send Me a Message</h3>
-            <input class="input-control" type="text" placeholder="Name" aria-label="Name" required />
-            <input class="input-control" type="email" placeholder="Email" aria-label="Email" required />
-            <input class="input-control" type="text" placeholder="Subject" aria-label="Subject" />
+            <input name="name" class="input-control" type="text" placeholder="Name" aria-label="Name" required />
+            <input name="email" class="input-control" type="email" placeholder="Email" aria-label="Email" required />
+            <input name="subject" class="input-control" type="text" placeholder="Subject" aria-label="Subject" />
             <textarea
+              name="message"
               class="input-control"
               id="message"
               cols="30"
@@ -339,7 +340,8 @@
               aria-label="Message"
               required
             ></textarea>
-            <button class="contact-submit" type="submit">Send Message</button>
+            <button class="contact-submit" type="submit" id="submit-btn">Send Message</button>
+            <div id="form-status" style="margin-top: 10px; font-weight: 600;"></div>
           </form>
           <div class="contact-details">
             <h1>Contact Info</h1>
@@ -348,7 +350,7 @@
               <div class="contact-icon">
                 <i class="fa-solid fa-location-dot"></i>
               </div>
-              <p><span>Address:</span> Bhaktapur, Nepal</p>
+              <p><span>Address:</span> Ontario, Canada</p>
             </div>
 
 
